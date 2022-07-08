@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { getImage, ImageType } from "../../../lib/getImage";
+import { getImage, ImageType } from "lib/getImage";
 const { LOGO } = ImageType;
 
 export const Logo: FC = () => {
