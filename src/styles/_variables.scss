@@ -1,0 +1,8 @@
+@mixin breakpoint($point) {
+  @if $point==md {
+    // for 768px screen
+    @media (min-width: 48em) {
+      @content;
+    }
+  }
+}

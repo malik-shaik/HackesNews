@@ -1,11 +1,12 @@
 import React from "react";
 import "./styles/_main.scss";
+import { Navbar } from "./components/navbar";
 
 function App() {
   return (
-    <div>
-      <h1>hackers news</h1>
-    </div>
+    <>
+      <Navbar />
+    </>
   );
 }
 
