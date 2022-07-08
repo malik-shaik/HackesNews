@@ -1,8 +1,8 @@
 import { FC, useState } from "react";
 
-import { Logo } from "./logo";
-import { NavLinks } from "./nav-links";
-import { ToggleButton } from "./toggle";
+import { Logo } from "components/navbar/logo";
+import { NavLinks } from "components/navbar/nav-links";
+import { ToggleButton } from "components/navbar/toggle";
 
 export const Navbar: FC = () => {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);

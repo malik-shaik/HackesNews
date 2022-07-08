@@ -1,5 +1,5 @@
 import { FC, useEffect, useState } from "react";
-import { ToggleButtonProps } from "../toggle";
+import { ToggleButtonProps } from "components/navbar/toggle";
 
 type WindowSize = {
   width: number;
