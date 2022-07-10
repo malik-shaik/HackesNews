@@ -1,10 +1,10 @@
 export enum ImageType {
-  LOGO = "logo",
-  STORY = "story",
+  LOGO = 'logo',
+  STORY = 'story',
 }
 type Params = {
-  imageType: ImageType;
-};
+  imageType: ImageType
+}
 
 /**
  * Gives image url based on type
@@ -13,7 +13,7 @@ type Params = {
  */
 export const getImage = ({ imageType }: Params): string => {
   if (imageType === ImageType.LOGO) {
-    return "images/hacker-logo.png";
+    return 'images/hacker-logo.png'
   }
-  return "";
-};
+  return ''
+}

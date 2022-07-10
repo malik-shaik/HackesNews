@@ -1,11 +1,11 @@
-import { FC, useState } from "react";
+import { FC, useState } from 'react'
 
-import { Logo } from "components/navbar/logo";
-import { NavLinks } from "components/navbar/nav-links";
-import { ToggleButton } from "components/navbar/toggle";
+import { Logo } from 'components/navbar/logo'
+import { NavLinks } from 'components/navbar/nav-links'
+import { ToggleButton } from 'components/navbar/toggle'
 
 export const Navbar: FC = () => {
-  const [menuOpen, setMenuOpen] = useState<boolean>(false);
+  const [menuOpen, setMenuOpen] = useState<boolean>(false)
 
   return (
     <div className="navbar">
@@ -15,5 +15,5 @@ export const Navbar: FC = () => {
 
       <ToggleButton isMenuOpen={menuOpen} setMenuOpen={setMenuOpen} />
     </div>
-  );
-};
+  )
+}
