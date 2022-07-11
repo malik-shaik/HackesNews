@@ -3,6 +3,7 @@ export enum ImageType {
   STORY = 'story',
 }
 type Params = {
+  imageName?: string
   imageType: ImageType
 }
 
@@ -11,9 +12,9 @@ type Params = {
  * @param imageType which can be 'logo' or 'story'
  * @returns image url
  */
-export const getImage = ({ imageType }: Params): string => {
+export const getImage = ({ imageName, imageType }: Params): string => {
   if (imageType === ImageType.LOGO) {
     return 'images/hacker-logo.png'
   }
-  return ''
+  return `images/${imageName}`
 }
