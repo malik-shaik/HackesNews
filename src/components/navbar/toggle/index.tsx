@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import { AiOutlineClose } from 'react-icons/ai'
-import { BiMenuAltRight } from 'react-icons/bi'
+import { BiMenu } from 'react-icons/bi'
 
 export interface ToggleButtonProps {
   isMenuOpen: boolean
@@ -16,7 +16,7 @@ export const ToggleButton: FC<ToggleButtonProps> = ({
   return (
     <div className="navbar__toggle">
       {!isMenuOpen ? (
-        <BiMenuAltRight onClick={menuToggleHandler} />
+        <BiMenu onClick={menuToggleHandler} />
       ) : (
         <AiOutlineClose onClick={menuToggleHandler} />
       )}
