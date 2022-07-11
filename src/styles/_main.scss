@@ -1,9 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:wght@100;200;500;700&display=swap");
-@import "./colors";
-@import "./variables";
-@import "./navbar";
-
-$fontFamily: "Albert Sans", sans-serif;
+@import './variables';
+@import './navbar';
+@import './landing-page';
 
 * {
   box-sizing: border-box;
@@ -13,4 +10,5 @@ $fontFamily: "Albert Sans", sans-serif;
 body {
   background-color: $grey-000;
   font-family: $fontFamily;
+  color: $grey-800;
 }
