@@ -1,5 +1,6 @@
 import { FC, useEffect, useState } from 'react'
 import { ToggleButtonProps } from 'components/navbar/toggle'
+import { Link } from 'react-router-dom'
 
 type WindowSize = {
   width: number
@@ -43,8 +44,16 @@ export const NavLinks: FC<NavLinksProps> = ({ isMenuOpen, setMenuOpen }) => {
   return (
     <nav className={`navbar__nav ${isMenuClass}`}>
       <ul>
-        <li onClick={handleNavLinkClick}>New Stories</li>
-        <li onClick={handleNavLinkClick}>Contact us</li>
+        <Link className="navbar__nav__link" onClick={handleNavLinkClick} to="/">
+          Home
+        </Link>
+        <Link
+          className="navbar__nav__link"
+          onClick={handleNavLinkClick}
+          to="contact"
+        >
+          Contact us
+        </Link>
       </ul>
     </nav>
   )

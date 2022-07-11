@@ -5,10 +5,13 @@ interface ViewStoryProps {
 }
 export const ViewStory: FC<ViewStoryProps> = ({ url }) => {
   return (
-    <div className="view__story">
-      <a href={url || ''} target="_blank" rel="noreferrer noopener">
-        View story
-      </a>
-    </div>
+    <a
+      className="view__story"
+      href={url || ''}
+      target="_blank"
+      rel="noreferrer noopener"
+    >
+      View story
+    </a>
   )
 }

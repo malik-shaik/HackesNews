@@ -62,19 +62,19 @@
         align-items: center;
         margin-bottom: 0;
       }
-      li {
-        margin: 10px;
-        padding: 10px 20px;
-        border: 1px solid $grey-700;
-        border-radius: $border-radius;
-        cursor: pointer;
-        font-size: 0.9rem;
-        color: $grey-700;
+    }
 
-        &:hover {
-          color: $grey-800;
-          border: 1px solid $grey-600;
-        }
+    &__link {
+      margin: 10px;
+      padding: 10px 20px;
+      border: 1px solid $grey-700;
+      border-radius: $border-radius;
+      cursor: pointer;
+      font-size: 0.9rem;
+      color: $grey-700;
+      text-decoration: none;
+      &:hover {
+        color: $grey-900;
       }
     }
 
