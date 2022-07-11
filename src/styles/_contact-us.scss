@@ -1,0 +1,18 @@
+.contact {
+  @include breakpoint(md) {
+    margin-top: 5%;
+  }
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  h3 {
+    border-bottom: solid 1px $grey-800;
+    margin-bottom: 5px;
+  }
+  p {
+    margin: 5px;
+    font-size: small;
+  }
+}
