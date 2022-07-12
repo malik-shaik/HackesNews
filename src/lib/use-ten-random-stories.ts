@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import axios, { AxiosError } from 'axios'
 import { getMultipleRandomItems } from 'lib/get-multiple-random-items'
+import { shuffleElements } from 'lib/shuffle-elements'
 
 export interface Story {
   by: string
@@ -44,10 +45,9 @@ export const useTenRandomStories = (): UseTenRandomStoriesResult => {
       })
 
       // Get 10 random image ids
-      const tenRandomImages = getMultipleRandomItems({
-        array: Array.from(Array(10).keys()),
-        numOfElements: 10,
-      })
+      const tenRandomImages = shuffleElements<number>(
+        Array.from(Array(10).keys())
+      )
 
       const arrayOfPromises = tenRandomStories.map(async (story, i) => {
         // Fetch story data by its id

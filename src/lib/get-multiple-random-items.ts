@@ -1,3 +1,5 @@
+import { shuffleElements } from 'lib/shuffle-elements'
+
 interface Params<T> {
   array: T[]
   numOfElements: number
@@ -17,11 +19,3 @@ export const getMultipleRandomItems = <T>({
 
   return shuffled.slice(0, numOfElements)
 }
-
-/**
- * Shuffles elements from a given array
- * @param array of string
- * @returns shuffled array
- */
-export const shuffleElements = <T>(array: T[]): T[] =>
-  [...array].sort(() => 0.5 - Math.random())
